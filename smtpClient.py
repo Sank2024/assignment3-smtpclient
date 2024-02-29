@@ -14,9 +14,9 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     try:
         clientSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         clientSocket.connect((mailserver, port))
-        print("Connected to the mail server")
+        #print("Connected to the mail server")
     except Exception as e:
-        print("Error connecting to the mail server: ", e)
+        #print("Error connecting to the mail server: ", e)
         exit()
     # Fill in end
 
